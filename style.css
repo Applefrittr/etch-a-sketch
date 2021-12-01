@@ -3,21 +3,29 @@ div.container  {
     width: 960px;
     height: 960px;
     background-color: mediumseagreen;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 1px;
+    border: 1px solid mediumaquamarine;
 }
 
 body  {
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 div.grid    {
    
-    padding: 16px;
-    background-color: mintcream;
-    color: orange;
-    align-items: stretch;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+div.column  {
+
+  padding: 5px;
+  background-color:mintcream;
+  color: orange;
+  flex: auto; 
 }
