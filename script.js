@@ -1,15 +1,37 @@
 const container = document.querySelector('.container')
 
-for (let i=0; i < 16; i++) { 
-    const grid = document.createElement('div')
-    grid.classList.add('grid')
+for (let i=0; i < 64; i++) { 
+    const column = document.createElement('div')
+    column.classList.add('column')
       
-    container.appendChild(grid)
+    container.appendChild(column)
 
-    for (let j=0; j<16; j++)    {
-        const column = document.createElement('div')
-        column.classList.add('column')
+    for (let j=0; j < 64; j++)    {
+        const grid = document.createElement('div')
+        grid.classList.add('grid')
 
-        grid.appendChild(column)
+        column.appendChild(grid)
     }
 }
+
+const divs = document.querySelectorAll('.grid')
+console.log(divs)
+
+let draw = false
+
+container.addEventListener('mousedown', () =>   {
+    draw = true
+})
+
+container.addEventListener('mouseup', () =>     {
+    draw = false
+})
+
+divs.forEach((grid)    => {
+    grid.addEventListener('mouseover', () =>    {
+        if(draw == true)    {
+            grid.classList.add('etch')
+        }
+    })
+})
+

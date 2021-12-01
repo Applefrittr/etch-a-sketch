@@ -16,16 +16,20 @@ body  {
 
 div.grid    {
    
+    padding: 5px;
+    background-color:mintcream;
+    color: orange;
     flex: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
 }
 
 div.column  {
 
-  padding: 5px;
-  background-color:mintcream;
-  color: orange;
-  flex: auto; 
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+div.grid.etch   {
+    background-color: black;
 }
