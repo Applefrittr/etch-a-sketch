@@ -16,7 +16,7 @@ body  {
 
 div.grid    {
    
-    padding: 5px;
+    padding: 1px;
     background-color:mintcream;
     color: orange;
     flex: auto;
@@ -32,4 +32,8 @@ div.column  {
 
 div.grid.etch   {
     background-color: black;
+}
+
+input   {
+    width: 500px;
 }
