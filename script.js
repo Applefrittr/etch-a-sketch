@@ -112,34 +112,9 @@ clear.addEventListener('click', () =>   {
     createGrid()
 })
 
-function colors()  {                                        //rainbow function, randoms only major colors using rgb.  Only values allowed are 0 or 255
-    let x = Math.floor(Math.random() * 2)
-    let y = Math.floor(Math.random() * 2)
-    let z = Math.floor(Math.random() * 2)
-
-    let r
-    let g
-    let b
-
-    if (x == 0) {
-        r = 0
-    } else {
-        r = 255
-    }
-
-    if (y == 0) {
-        g = 0
-    } else {
-        g = 255
-    }
-
-    if (z == 0) {
-        b = 0
-    } else {
-        b = 255
-    }
-    let color = [r,g,b]
+function colors()  {                                        
+    //rainbow function
+    let color = [Math.floor(Math.random() * 255), Math.floor(Math.random() * 255), Math.floor(Math.random() * 255)]
     console.log('rgb(' + color + ')')
     return 'rgb(' + color + ')'
-
 }

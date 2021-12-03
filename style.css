@@ -12,17 +12,19 @@ div.container  {
 body {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(pics/background.png);
+    color: white;
+    font-size: 20px;
 }
 
 div.screen    {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    padding: 75px;
-    background-color: red;
-    border-radius: 30px;
-    box-shadow: 15px 10px 10px black;
+    
+    
 }
 
 div.buttons {
@@ -77,4 +79,22 @@ button.selected {
     background-color: mintcream;
     border-radius: 5px;
     margin: 100px 0;
+    color: black;
+    font-size: 15px;
+}
+
+div.pad     {
+    background-color: red;
+    border-radius: 30px;
+    box-shadow: 15px 10px 10px black;
+    padding: 60px 75px 75px 75px ;
+}
+
+h1  {
+    margin-top: 0px;
+    text-align: center;
+    color: gold;
+    font-family: cursive;
+    font-weight: 900;
+    font-size: 50px;
 }
