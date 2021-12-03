@@ -12,10 +12,20 @@
 
     <body>
         <h1>Etch-a-Sketch</h1>
-        <div class="container"></div>
+        
+        <div class="screen">
+            <div class="buttons">
+                <button class="black" type="button"><img src="pics/black.png" alt="black">Black</button>
+                <button class="rainbow" type="button"><img src="pics/rainbow.png" alt="rainbow">Rainbow</button>
+                <button class="eraser" type="button"><img src="pics/eraser.png" alt="eraser">Erase</button>
+            </div>
+            <div class="container"></div>
+            
+        </div>
         <p>Pixel Slider</p>
         <input type="range" min="1" max="100" value="50" class="slider">
-        <p>Pixels: <span class="pixVal"></span></p>
+        <p>Pixels: <span class="pixVal"></span></p>   
+        
     </body>
 
 </html>

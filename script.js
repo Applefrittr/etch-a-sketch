@@ -8,7 +8,7 @@ pixVal.textContent = slider.value
 slider.oninput = function()  {
     pixVal.textContent = this.value
     console.log(slider.value)
-    deleteGrid(container)
+    deleteGrid()
     createGrid()
 }
 createGrid()
@@ -28,10 +28,20 @@ function createGrid()   {
             column.appendChild(grid)
         }
     }
+    
     const divs = document.querySelectorAll('.grid')
     console.log(divs)
     
     let draw = false
+
+    let black = false
+    const black = document.querySelector('.black')
+
+    let rainbow = false
+    const rainbow = document.querySelector('.rainbow')
+
+    let erase = false
+    const erase = document.querySelector('.erase')
     
     container.addEventListener('mousedown', () =>   {
         draw = true
@@ -50,9 +60,19 @@ function createGrid()   {
     })
 }
 
-function deleteGrid(container)      {
+function deleteGrid()      {
     
     while (container.firstChild)    {
         container.removeChild(container.firstChild)
     }          
 }
+
+
+const buttons = document.querySelectorAll('button')
+
+buttons.forEach((button)    =>  {
+    button.addEventListener('click', () =>  {
+        button.classList.toggle('selected')
+        
+    })
+})

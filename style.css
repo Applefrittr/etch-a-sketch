@@ -8,12 +8,32 @@ div.container  {
     border: 1px solid mediumaquamarine;
 }
 
-body  {
+body {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
 
+div.screen    {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+div.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 50px 0;
+}
+
+button  {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
 div.grid    {
    
     padding: 1px;
@@ -36,4 +56,14 @@ div.grid.etch   {
 
 input   {
     width: 500px;
+}
+
+img {
+    
+    height: 15px;
+    width: 15px;
+}
+
+button.selected {
+    background-color: mediumseagreen;
 }
